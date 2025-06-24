@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - OPINIFY</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../HTML/home.html" style="color: inherit; text-decoration: none"
+          >OPINIFY</a
+        >
+      </h1>
+      <section class="site-nav">
+        <nav>
+          <a href="../HTML/home.html" class="active">Home</a>
+        </nav>
+    </header>
+
+    <main>
+      <section id="content-area">
+        <h2>Register</h2>
+        <form id="register-form">
+          <section class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </section>
+          <section class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </section>
+          <section class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </section>
+          <button type="submit">Register</button>
+          <p>Already have an account? <a href="../HTML/login.html">Login</a></p>
+        </form>
+        <section id="register-message"></section>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 OPINIFY. All rights reserved.</p>
+    </footer>
+
+    <script src="../JS/register.js">
+      
+    </script>
+  </body>
+</html>

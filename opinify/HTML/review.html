@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review - OPINIFY</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a
+          href="../HTML/home.html"
+          style="color: inherit; text-decoration: none"
+          >OPINIFY</a
+        >
+      </h1>
+      <section class="site-nav">
+        <nav>
+          <a href="../HTML/home.html" class="active">Home</a>
+          <a href="../HTML/search.html">Search</a>
+          <a href="../HTML/profile.html">Profile</a>
+          <a href="../HTML/login.html" id="login-link">Login</a>
+          <a href="../HTML/register.html" id="register-link">Register</a>
+        </nav>
+        <section id="mode-switcher-container"></section>
+      </section>
+    </header>
+
+    <main class="review-page">
+      <section class="item-details">
+        <section class="item-header">
+          <section class="item-poster">
+            <img id="item-image" src="" alt="Item poster" />
+          </section>
+          <section class="item-info">
+            <h1 id="item-title"></h1>
+            <section class="item-meta">
+              <span id="item-creator"></span>
+              <span id="item-year"></span>
+              <span id="item-type"></span>
+            </section>
+            <section class="item-rating">
+              <section class="average-rating">
+                <section class="stars" id="average-stars"></section>
+                <span class="rating-number" id="average-rating"></span>
+                <span class="review-count" id="review-count"></span>
+              </section>
+            </section>
+            <button id="write-review-btn" class="write-review-btn">
+              Write a Review
+            </button>
+            <button id="add-to-favorites-btn" class="add-to-favorites-btn">
+              Add to Favorites
+            </button>
+          </section>
+        </section>
+
+        <section class="item-description">
+          <h3>Description</h3>
+          <p id="item-description-text"></p>
+        </section>
+      </section>
+
+      <section class="reviews-section">
+        <section class="reviews-header">
+          <h2>User Reviews</h2>
+          <section class="sort-options">
+            <select id="sort-reviews">
+              <option value="newest">Newest First</option>
+              <option value="highest">Highest Rated</option>
+              <option value="lowest">Lowest Rated</option>
+            </select>
+          </section>
+        </section>
+
+        <section class="reviews-container" id="reviews-container"></section>
+
+        <button id="load-more-reviews" class="load-more-btn">
+          Load More Reviews
+        </button>
+      </section>
+
+      <section class="similar-items">
+        <h2>More Like This</h2>
+        <section
+          class="similar-items-container"
+          id="similar-items-container"
+        ></section>
+      </section>
+    </main>
+
+    <section class="modal-overlay" id="review-modal">
+      <section class="modal-content">
+        <button class="close-modal">&times;</button>
+        <h2>Write a Review</h2>
+        <form id="review-form">
+          <section class="form-group">
+            <label for="review-rating">Your Rating</label>
+            <section class="star-rating">
+              <span class="star" data-value="1">☆</span>
+              <span class="star" data-value="2">☆</span>
+              <span class="star" data-value="3">☆</span>
+              <span class="star" data-value="4">☆</span>
+              <span class="star" data-value="5">☆</span>
+              <input type="hidden" id="review-rating" name="rating" value="0" />
+            </section>
+          </section>
+          <section class="form-group">
+            <label for="review-title">Review Title</label>
+            <input type="text" id="review-title" name="title" required />
+          </section>
+          <section class="form-group">
+            <label for="review-text">Your Review</label>
+            <textarea
+              id="review-text"
+              name="review"
+              rows="5"
+              required
+            ></textarea>
+          </section>
+          <section class="form-group">
+            <label>Pros & Cons</label>
+            <section class="pros-cons-container">
+              <section class="pros">
+                <h4>Pros</h4>
+                <section class="pros-list">
+                  <input
+                    type="text"
+                    class="pro-input"
+                    placeholder="Add a pro"
+                  />
+                  <button type="button" class="add-pro-btn">
+                    + Add Another
+                  </button>
+                </section>
+              </section>
+              <section class="cons">
+                <h4>Cons</h4>
+                <section class="cons-list">
+                  <input
+                    type="text"
+                    class="con-input"
+                    placeholder="Add a con"
+                  />
+                  <button type="button" class="add-con-btn">
+                    + Add Another
+                  </button>
+                </section>
+              </section>
+            </section>
+          </section>
+          <button type="submit" class="submit-review-btn">Submit Review</button>
+        </form>
+      </section>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 OPINIFY. All rights reserved.</p>
+    </footer>
+
+    <script src="../JS/app.js"></script>
+    <script src="../JS/review.js"></script>
+  </body>
+</html>

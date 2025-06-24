@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - OPINIFY</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../HTML/home.html" style="color: inherit; text-decoration: none"
+          >OPINIFY</a
+        >
+      </h1>
+      <section class="site-nav">
+        <nav>
+          <a href="../HTML/home.html" class="active">Home</a>
+          
+        </nav>
+        
+    </header>
+
+    <main>
+      <section id="content-area">
+        <h2>Login</h2>
+        <form id="login-form">
+          <section class="form-group">
+            <label for="username_or_email">Username or Email</label>
+            <input
+              type="text"
+              id="username_or_email"
+              name="username_or_email"
+              required
+            />
+          </section>
+          <section class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </section>
+          <button type="submit">Login</button>
+          <p>Don't have an account? <a href="../HTML/register.html">Register</a></p>
+        </form>
+        <section id="login-message"></section>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 OPINIFY. All rights reserved.</p>
+    </footer>
+
+    <script src="../JS/login.js">
+      
+     </script>
+  </body>
+</html>

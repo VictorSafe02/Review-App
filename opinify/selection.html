@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPINIFY - Select Your Interest</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <header class="center-header">
+      <h1>OPINIFY</h1>
+      <p>
+        Dive into the world of books, movies, and TV shows with honest reviews
+        and ratings from fellow enthusiasts.
+      </p>
+    </header>
+
+    <main>
+      <section class="selection-container">
+        <article id="books" class="selection-box">
+          <h2>Books</h2>
+          <p>
+            Explore and share reviews of your favorite books from various
+            genres.
+          </p>
+          <button onclick="navigateAndSetMode('books')">Explore Books</button>
+        </article>
+        <article id="movies-tv" class="selection-box">
+          <h2>Movies & TV Shows</h2>
+          <p>
+            From blockbuster movies to binge-worthy TV shows, discover what's
+            worth watching.
+          </p>
+          <button onclick="navigateAndSetMode('movies')">
+            Explore Movies & TV
+          </button>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 OPINIFY. All rights reserved.</p>
+    </footer>
+
+    <script src="./JS/selection.js"></script>
+  </body>
+</html>
